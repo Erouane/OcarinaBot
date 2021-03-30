@@ -8,7 +8,8 @@
     "@types/tmi.js": "^1.4.2",
     "dotenv": "^8.2.0",
     "firebase-admin": "^9.2.0",
-    "tmi.js": "^1.5.0"
+    "tmi.js": "^1.7.5",
+    "ts-node": "^9.1.1"
   },
   "devDependencies": {},
   "scripts": {

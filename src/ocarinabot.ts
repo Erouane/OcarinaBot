@@ -16,7 +16,7 @@ client.on("connected", onConnectedHandler);
 client.on("timeout", onTimeoutHandler);
 
 // Connect to Twitch:
-client.connect();
+client.connect().catch(console.error);
 
 const timer = new Timer();
 
@@ -27,9 +27,10 @@ async function onMessageHandler(
   message: string,
   self: boolean
 ) {
+  // Ignore messages from the bot
   if (self) {
     return;
-  } // Ignore messages from the bot
+  }
 
   // Remove whitespace from chat message
   const commandName = message.trim();
@@ -38,7 +39,7 @@ async function onMessageHandler(
 
   const reseaux = `Suis-moi sur mes réseaux ! chaîne youtube avec Flrt : ${youtubeLInk} chaîne secondaire : ${youtubeSecondLink} discord : ${discordLink}`;
 
-  const discord = `Informations sur les streams, conseils en code, coaching sur LoL : n'attends plus un minute et rejoins mon discord ${discordLink}`;
+  const discord = `Informations sur les streams, conseils en code, coaching sur LoL : rejoins mon discord ou SIDA ${discordLink}`;
 
   if (timer.isTimerElapsed()) {
     client.say(channel, discord);

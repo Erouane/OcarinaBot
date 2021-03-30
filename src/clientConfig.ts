@@ -1,10 +1,17 @@
 import * as tmi from "tmi.js";
 import * as dotenv from "dotenv";
 
-dotenv.config();
+dotenv.config({ path: "../.env" });
+
+console.log(process.env.BOT_USERNAME);
 
 // Define configuration options
 const opts = {
+  options: { debug: true, messagesLogLevel: "info" },
+  connection: {
+    reconnect: true,
+    secure: true,
+  },
   identity: {
     username: process.env.BOT_USERNAME,
     password: process.env.OAUTH_TOKEN,
@@ -13,4 +20,4 @@ const opts = {
 };
 
 // Create a client with our options
-export const client = tmi.client(opts);
+export const client = tmi.Client(opts);

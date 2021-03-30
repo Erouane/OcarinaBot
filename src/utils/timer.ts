@@ -6,7 +6,7 @@ export class Timer {
   }
 
   isTimerElapsed() {
-    if (Date.now() - this.lastProc > 1000 * 60 * 60 * 2) {
+    if (Date.now() - this.lastProc > 1000 * 60 * 60) {
       this.lastProc = Date.now();
       return true;
     }
