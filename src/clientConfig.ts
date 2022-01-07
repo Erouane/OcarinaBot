@@ -1,7 +1,7 @@
 import * as tmi from "tmi.js";
 import * as dotenv from "dotenv";
 
-dotenv.config();
+dotenv.config({ path: "../.env" });
 
 const channels = process.env.CHANNEL_NAME ? [process.env.CHANNEL_NAME] : [];
 

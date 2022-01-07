@@ -1,7 +1,7 @@
 import * as admin from "firebase-admin";
 import * as dotenv from "dotenv";
 
-dotenv.config();
+dotenv.config({ path: "../../.env" });
 
 const serviceAccount = require(process.env.GOOGLE_APPLICATION_CREDENTIALS
 	? process.env.GOOGLE_APPLICATION_CREDENTIALS
