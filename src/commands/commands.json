@@ -9,8 +9,16 @@
 			"content": "Suis-moi sur mes réseaux ! chaîne youtube avec Flrt : shorturl.at/kpARV chaîne secondaire : shorturl.at/fKQR2 discord : discord.gg/XC9MXmv"
 		},
 		{
+			"command": "!twitter",
+			"content": "Compte twitter (un peu vide mais tkt je fais des dingueries un jour) https://twitter.com/WanroLol"
+		},
+		{
+			"command": "!youtube",
+			"content": "Wanro & Flrt : https://www.youtube.com/channel/UC5mx_dHIKiVYNYDwOUCA3GQ Wanro: https://www.youtube.com/channel/UCkakrCVCgrTo9gVoNXkl5tw"
+		},
+		{
 			"command": "!opgg",
-			"content": "https://euw.op.gg/summoner/userName=%20MeKhaScyther"
+			"content": "https://euw.op.gg/summoner/userName=ROI+HEENOK"
 		},
 		{
 			"command": "!braum",
@@ -19,10 +27,6 @@
 		{
 			"command": "!vocal",
 			"content": "je suis en vocal je ne peux pas autant lire le chat !"
-		},
-		{
-			"command": "!youtube",
-			"content": "chaîne youtube de VODs : https://www.youtube.com/channel/UCkakrCVCgrTo9gVoNXkl5tw !"
 		},
 		{
 			"command": "!miketoos",

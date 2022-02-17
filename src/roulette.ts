@@ -32,7 +32,7 @@ export const roulette = async (channel: string, username: string) => {
 			const timeoutsUpdated = await getTimeouts(username);
 			client.say(
 				channel,
-				`${username} a ${pointsUpdated} points ! Maximum : ${maxPointsUpdated} nombre de tos : ${timeoutsUpdated}`
+				`${username} a ${pointsUpdated} points ! Maximum : ${maxPointsUpdated} nombre de timeouts : ${timeoutsUpdated}`
 			);
 		} else {
 			client.say(channel, `/timeout ${username} ${rouletteTimeout(points)}`);
